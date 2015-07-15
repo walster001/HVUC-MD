@@ -13,7 +13,8 @@
 .docspages {
     animation-name: fly-out;
     animation-duration: 4s;
-	animation-iteration-count:1;
+    animation-iteration-count:1;
+    animation-timing-function:ease-in-out;
 }
 .navbutton {
   height: 150px;
@@ -103,26 +104,10 @@
 <br>
 <!-- Docs Pages Header Start --> 
 <div id="docspage">
-<ul>
-   <li><a href='index.html'><span>Home</span></a></li>
-   <li><a href='#'><span>Products</span></a>
-      <ul>
-         <li><a href='#'><span>Product 1</span></a>
-            <ul>
-               <li><a href='#'><span>Sub Item</span></a></li>
-               <li><a href='#'><span>Sub Item</span></a></li>
-            </ul>
-         </li>
-         <li><a href='#'><span>Product 2</span></a>
-            <ul>
-               <li><a href='#'><span>Sub Item</span></a></li>
-               <li><a href='#'><span>Sub Item</span></a></li>
-            </ul>
-         </li>
-      </ul>
-   </li>
-   <li><a href='#'><span>About</span></a></li>
-   <li><a href='#'><span>Contact</span></a></li>
-</ul>
+	<div id="docs-nav-bar">
+		<button class="nav-item">Lighting Docs</button>
+		<button class="nav-item">Sound Docs</button>
+		<button class="nav-item">Projection Docs</button>
+	</div>
 </div>
 </body>
