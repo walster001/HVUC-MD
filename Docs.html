@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<charset="utf-8"
+<head>
+<title>HVUC Media Collaboration</title>
+<style>
+@keyframes fly-out {
+	0% {top:100px; left:100px;}
+	25% {top:500px; left:200px;}
+	50% {right:200px; bottom:200px;}
+	75% {top:700px; left:600px;}
+	100% {top:100px; left:100px;}
+}
+.docspages {
+    animation-name: fly-out;
+    animation-duration: 4s;
+	animation-iteration-count:1;
+}
+.navbutton {
+  height: 150px;
+  width: 150px;
+       -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+ 
+.navbutton:hover {
+  width: 180px;
+  height: 180px;
+       -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+<!-- Docspage header -->
+#docspage,
+#docspage ul,
+#docspage ul li,
+#docspage ul ul {
+  list-style: none; 
+  margin: 0; 
+  padding: 0;
+  border: 0;
+}
+#docspage ul {
+  position: relative;
+  z-index: 397; 
+}
+#docspage ul li {
+  min-height: 1px;
+  line-height: 1em;
+  vertical-align: middle;
+}
+#docspage ul li:hover {
+  position: relative; 
+  z-index: 399;
+  cursor: default;
+}
+#docspage ul ul {
+  visibility: hidden; /* hide sub menus by default */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 398; 
+  width: 100%;
+}
+#docspage ul ul ul {
+  top: 0px; 
+  left: 99%;
+}
+#docspage ul li:hover > ul {
+  visibility: visible; /* show sub menu */
+}
+#docspage ul ul {
+  top: 0px;
+  left: 99%;
+<!-- End DocsPage Header CSS -->
+#Footer-Para {
+	font-family:Century Gothic, helvetica, sans-serif;
+	font-weight:normal;
+}
+</style>
+<meta name="header" content="<link rel="icon" type="image/ico" href="Favicon.ico"/>
+</head>
+<body>
+<!-- Page Header -->
+<float-left>
+<img src="HVUC Media Logo.png" alt="Hope Valley Media Drop" width="200px">
+</float-left>
+<float-center>
+<a href='MD.html'>
+<img src="Buttons/Live Chat Button.png" alt="Live Chat Button" width="150px" class="navbutton">
+</a>
+<a href='Docs.html'>
+<img src="Buttons/Docs Button.png" alt="Tech Documentation" width="150px" class="navbutton">
+</a>
+<a href='DMX.html'>
+<img src="Buttons/DMX Connect.png" alt="DMX Connect Module" width="160px" class="navbutton">
+</a>
+<!-- End Page Header -->
+<br>
+<!-- Docs Pages Header Start --> 
+<div id="docspage">
+<ul>
+   <li><a href='index.html'><span>Home</span></a></li>
+   <li><a href='#'><span>Products</span></a>
+      <ul>
+         <li><a href='#'><span>Product 1</span></a>
+            <ul>
+               <li><a href='#'><span>Sub Item</span></a></li>
+               <li><a href='#'><span>Sub Item</span></a></li>
+            </ul>
+         </li>
+         <li><a href='#'><span>Product 2</span></a>
+            <ul>
+               <li><a href='#'><span>Sub Item</span></a></li>
+               <li><a href='#'><span>Sub Item</span></a></li>
+            </ul>
+         </li>
+      </ul>
+   </li>
+   <li><a href='#'><span>About</span></a></li>
+   <li><a href='#'><span>Contact</span></a></li>
+</ul>
+</div>
+</body>
